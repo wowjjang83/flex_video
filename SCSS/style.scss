@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import "reset";
+@import "mixin";
+
+$bgColor: #eee;
+$fontColor: #000;
+$borderColor: #bbb;
+$itemBgColor: #eee;
+
+body{
+    background: $bgColor;
+}
+.wrap{
+    width:100%;
+    border:2px solid #bbb;
+    padding:100px;
+    display: flex;
+    justify-content: center;
+
+    .item{
+        width:100%;
+        padding: 20px;
+        background:$itemBgColor;
+        margin:  50px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px rgba($color: #000000, $alpha: .1);
+
+        h2{
+            font-size: 20px;
+            font-family: "arial";
+            @if $itemBgColor == #eee{
+                color: #000;
+            } @else{
+                color: #fff;
+            }
+            //color:#333;
+            margin-bottom: 15px;
+        }
+
+        p{
+            font-size: 14px;
+            font-family: "arial";
+            line-height: 1.3;
+            color:#333;
+            margin-bottom: 20px;
+        }
+
+        a{
+            font-size: 20px;
+        }
+
+        &:hover{
+            background: #111;
+
+            h2,p,a{
+                color: #fff;
+            }
+        }
+
+        
+    }
+}

@@ -1,0 +1,3 @@
+d:
+cd D:\WORK_LHJ\02_Etc\05_WebMotion\01_STUDY\SCSS
+sass --watch style.scss css/style.css
